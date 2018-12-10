@@ -72,16 +72,6 @@ class App extends Component {
         registerTeamMember(__team[1]);
       }
     });
-
-    // !isServer &&
-    //   window.addEventListener('resize', () => {
-    //     const {innerWidth} = window;
-    //     this.setState({
-    //       isSmallerScreen: innerWidth < 768,
-    //       isSmallScreen: innerWidth < 991,
-    //       isXLScreen: innerWidth >= 1200,
-    //     });
-    //   });
   }
 
   onLogout = async () => {

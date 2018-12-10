@@ -1,24 +1,15 @@
 import React from 'react';
 import {Container, Row} from 'reactstrap';
 import IconLink from './IconLink';
-import {getLoginUrl} from './Redirect';
 
-const Footer = ({user}) => (
+const Footer = () => (
   <footer className="bg-darkblue2 py-6 font-size-md">
     <Container>
       <Row className="footer-content align-items-center" noGutters>
         <div className="d-flex">
           <a className="text-white mr-6" href="mailto:rs18-team@googlegroups.com">
-            Contact
+            Contact Us
           </a>
-          <a className="text-white" href="http://confcodeofconduct.com/">
-            Code of Conduct
-          </a>
-          {!user && (
-            <a href={getLoginUrl()} className="text-white ml-6">
-              Login
-            </a>
-          )}
         </div>
         <div className="d-flex align-items-center">
           <IconLink href="https://twitter.com/reversim" icon="twitter" isLarge className="mr-5" />
@@ -28,7 +19,7 @@ const Footer = ({user}) => (
             isLarge
             className="mr-7"
           />
-          <span>All Rights Reserved © 2018</span>
+          <span>All Rights Reserved © 2019</span>
         </div>
       </Row>
     </Container>

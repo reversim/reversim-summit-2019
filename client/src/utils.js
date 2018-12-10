@@ -13,7 +13,7 @@ export const colors = ['purple', 'gold', 'cyan', 'blue', 'pink', 'yellow', 'gree
 export const isServer = window === '__server';
 export const history = isServer ? createMemoryHistory() : createBrowserHistory();
 
-export const REVERSIM_SUMMIT = 'Reversim Summit 2018';
+export const REVERSIM_SUMMIT = 'Reversim Summit 2019';
 export const REVERSIM_MAIL = 'rs18-team@googlegroups.com';
 
 export const getRemainingCFPDays = () => {

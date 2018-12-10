@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Navbar from './Navbar';
 import Footer from './Footer';
 import {REVERSIM_SUMMIT} from '../utils';
 
@@ -13,31 +12,13 @@ class Page extends Component {
   render() {
     const {
       children,
-      isHome,
-      user,
-      isSmallScreen,
-      onLogout,
-      location,
-      history,
-      eventConfig,
-      isSingleContent,
     } = this.props;
 
     return (
       <div
-        style={isHome ? {} : {paddingTop: 160}}
-        className={isSingleContent ? 'page-single-content' : ''}>
-        <Navbar
-          isHome={isHome}
-          user={user}
-          isSmallScreen={isSmallScreen}
-          onLogout={onLogout}
-          pathname={location.pathname}
-          history={history}
-          eventConfig={eventConfig || {}}
-        />
+        className='page-single-content'>
         {children}
-        <Footer user={user} />
+        <Footer/>
       </div>
     );
   }
