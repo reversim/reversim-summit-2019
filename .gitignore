@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+.tmp
+.idea
+compiled
+.swp
+.vscode
+env.sh
+.private
+webpack-stats.json
+.env
+backup-*
+newrelic_agent.log
