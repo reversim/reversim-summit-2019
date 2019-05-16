@@ -13,6 +13,5 @@ This will
 4. Follow the prompt to authorize the application
 
 ## TODO
-- It currently does not include lecture locations
 - The dates of the event are hardcoded in agenda.js
 - The agenda data is hardcoded in agenda.js
