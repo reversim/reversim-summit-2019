@@ -1,7 +1,7 @@
 const axios = require("axios");
-
+const halls = ['A10', 'A3', 'A4', 'A5'];
 const day1 = [
-  { time: "08:00-09:00", text: "Registration & Coffee" },
+  { time: "08:00-09:00", text: "Registration & Coffee", excludeHall: true },
   {
     time: "09:00-09:40",
     sessions: [
@@ -37,7 +37,7 @@ const day1 = [
       "5c77ae2c9cec66001786e61e"
     ]
   },
-  { time: "12:20-13:20", text: "Lunch" },
+  { time: "12:20-13:20", text: "Lunch" , excludeHall: true},
   {
     time: "13:20-13:50",
     sessions: [
@@ -94,7 +94,7 @@ const day1 = [
 ];
 
 const day2 = [
-  { time: "08:00-09:00", text: "Registration & Coffee" },
+  { time: "08:00-09:00", text: "Registration & Coffee", excludeHall: true },
   {
     time: "09:00-09:40",
     sessions: [
@@ -134,7 +134,7 @@ const day2 = [
       "5c645d5ae2ba3d00178ee616"
     ]
   },
-  { time: "12:20-13:20", text: "Lunch" },
+  { time: "12:20-13:20", text: "Lunch", excludeHall: true },
   {
     time: "13:20-13:50",
     sessions: [
@@ -235,6 +235,11 @@ class Agenda {
         }
       };
 
+      if(!slot.excludeHall){ // NOT Registration, Coffee, etc
+        // Single events are always in A10
+        event.location = halls[0];
+      }
+
       if (slot.sessions) {
         // Event includes more metadata
         let sessionData = this.loadSession(slot.sessions);
@@ -250,6 +255,7 @@ class Agenda {
       events.push(event);
     } else if (slot.sessions) {
       // Multiple events to generate
+      let count = 0;
       for (let session of slot.sessions) {
         if (session !== null) {
           if (typeof session === "string" || session instanceof String) {
@@ -270,7 +276,8 @@ class Agenda {
                 },
                 end: {
                   dateTime: endTime
-                }
+                },
+                location: halls[count]
               };
               events.push(event);
             }
@@ -283,12 +290,14 @@ class Agenda {
               },
               end: {
                 dateTime: endTime
-              }
+              },
+              location: halls[count]
             };
 
             events.push(event);
           }
         }
+        count++;
       }
     }
 
