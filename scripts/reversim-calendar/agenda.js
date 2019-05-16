@@ -1,6 +1,6 @@
 const axios = require("axios");
-const halls = ['A10', 'A3', 'A4', 'A5'];
-const day1 = [
+const halls = ['A10', 'A3', 'A4', 'A5']; // Copied from /client/src/data/halls.js
+const day1 = [ //Copied from Copied from /client/src/data/agenda.js, removed the breaks.
   { time: "08:00-09:00", text: "Registration & Coffee", excludeHall: true },
   {
     time: "09:00-09:40",
@@ -93,7 +93,7 @@ const day1 = [
   { time: "17:10-17:50", sessions: ["5cb1de4136df6a422308f415"] }
 ];
 
-const day2 = [
+const day2 = [ //Copied from Copied from /client/src/data/agenda.js, removed the breaks.
   { time: "08:00-09:00", text: "Registration & Coffee", excludeHall: true },
   {
     time: "09:00-09:40",
@@ -188,6 +188,7 @@ const day2 = [
   },
   { time: "17:10-17:50", sessions: ["5cb20ef536df6a42230a8bcf"] }
 ];
+const tzString = "+0300";
 
 class Agenda {
   async load() {
@@ -220,8 +221,8 @@ class Agenda {
       //Not an actual event
       return events;
     }
-    let startTime = `${date}T${times[0]}:00+0300`;
-    let endTime = `${date}T${times[1]}:00+0300`;
+    let startTime = `${date}T${times[0]}:00${tzString}`;
+    let endTime = `${date}T${times[1]}:00${tzString}`;
 
     if (slot.text) {
       // Single event
@@ -236,7 +237,7 @@ class Agenda {
       };
 
       if(!slot.excludeHall){ // NOT Registration, Coffee, etc
-        // Single events are always in A10
+        // Single events are always in halls[0]
         event.location = halls[0];
       }
 
@@ -301,7 +302,6 @@ class Agenda {
       }
     }
 
-    //console.log(events);
     return events;
   }
 
