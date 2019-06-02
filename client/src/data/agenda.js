@@ -65,7 +65,7 @@ export const agenda1 = [
   },
   {
     time: '16:50-17:10',
-    text: 'Beer break 🍻'
+    text: 'Break :)'
   },
   {time: '17:10-17:50', sessions: ['5cb1de4136df6a422308f415']},
   {time: '18:00', text: 'Goodbye'},
