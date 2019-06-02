@@ -1,6 +1,6 @@
 import React from "react";
 import Page from "./Page";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import s from "./Agenda.css";
 import cn from "classnames";
 import { agenda1, agenda2 } from "../data/agenda";
@@ -13,6 +13,13 @@ import halls from "../data/halls";
 import {image} from '../images';
 import agendaBg from "../images/agenda-page-bg.png";
 import diamond from "../images/SVG/diamond.svg";
+import {
+  faCalendarPlus
+} from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(faCalendarPlus);
 
 const _getSession = (sessions, id) => sessions[id];
 const getSession = (sessions, id) => {
@@ -344,6 +351,17 @@ class Agenda extends React.Component {
                     />
                   </div>
                 </div>
+              </div>
+              <div className="d-flex">
+                <a href={`https://calendar.google.com/calendar/r?cid=https://calendar.google.com/calendar/ical/78oe494u8ij7qpv4qeko7im03k%40group.calendar.google.com/public/basic.ics`} target="_blank">
+                  <Button
+                    color="primary"
+                    className="styled-button mr-4 on-purple"
+                  >
+                    <FontAwesomeIcon icon="calendar-plus" /> Add To Your
+                    Calendar
+                  </Button>
+                </a>
               </div>
             </div>
           </Container>

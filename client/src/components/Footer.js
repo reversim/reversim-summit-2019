@@ -62,6 +62,12 @@ const Footer = ({ isSmallScreen }) => (
             >
               Code of Conduct
             </a>
+            <a
+              className={cn("text-white", !isSmallScreen ? "ml-8" : "")}
+              href="https://expotelaviv.co.il/wp-content/uploads/2019/03/%D7%94%D7%A6%D7%94%D7%A8%D7%AA-%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA.pdf"
+            >
+              Accessibility Statement
+            </a>
           </div>
           <div className="d-flex align-items-center text-white">
             All Rights Reserved © 2019
