@@ -4,8 +4,10 @@ import { getLoginUrl } from "./Redirect";
 import { faEnvelope, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import cn from "classnames";
+import { Link } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { getHref } from "../utils";
 library.add(faFacebook, faTwitter, faEnvelope);
 
 const Footer = ({ isSmallScreen }) => (
@@ -62,12 +64,12 @@ const Footer = ({ isSmallScreen }) => (
             >
               Code of Conduct
             </a>
-            <a
+            <Link
               className={cn("text-white", !isSmallScreen ? "ml-8" : "")}
-              href="https://expotelaviv.co.il/wp-content/uploads/2019/03/%D7%94%D7%A6%D7%94%D7%A8%D7%AA-%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA.pdf"
+              to={`/AccessibilityStatement`}
             >
               Accessibility Statement
-            </a>
+            </Link>
           </div>
           <div className="d-flex align-items-center text-white">
             All Rights Reserved © 2019

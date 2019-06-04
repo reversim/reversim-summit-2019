@@ -113,7 +113,6 @@ const day2 = [ //Copied from Copied from /client/src/data/agenda.js, removed the
     time: "11:10-11:40",
     sessions: [
       "5c7859c31503d900172c5840",
-      "5c751107d0e22f001706cbc5",
       "5c6407d2e2ba3d00178ee60c",
       "5c517d367314030017e1c2c4"
     ]

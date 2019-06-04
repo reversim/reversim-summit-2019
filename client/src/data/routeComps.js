@@ -19,6 +19,7 @@ import CFPPage from '../components/CFPPage';
 import ProposalsPage from '../components/ProposalsPage';
 import SessionsPage from '../components/SessionsPage';
 import TimelinePage from '../components/TimelinePage';
+import AccessibilityStatementPage from "../components/AccessibilityStatementPage";
 
 import ScrollToTop from '../components/ScrollToTop';
 
@@ -45,4 +46,5 @@ export default [
   {path: '/sessions', comp: SessionsPage},
   {path: '/proposals', comp: ProposalsPage},
   {path: '/timeline', comp: TimelinePage},
+  {path: '/AccessibilityStatement', comp: AccessibilityStatementPage},
 ].map(({path, comp}) => ({path, comp: ScrollToTop(comp)}));
