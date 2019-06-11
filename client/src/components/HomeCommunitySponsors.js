@@ -8,10 +8,9 @@ import { hyperlink } from "../utils";
 import { image } from "../images";
 
 const sponsorsOrder = [
-  'Gett', 'Liveperson', 'Oracle', 'Chegg',
-  'Joytunes', 'Trax', 'CyberArk', 'Cloudinary',
-  'Zebra', 'eko', 'Cellebrite', 'Kenshoo',
-  'Bizzabo', 'Wework', 'ThetaRay', 'Tipalti'
+  'eBay', 'Kenshoo', 'Gett', 'Liveperson', 'Oracle', 'Chegg',
+  'Joytunes', 'Trax', 'Cloudinary', 'Zebra', 'Tipalti', 'eko',
+  'Cellebrite', 'Bizzabo', 'Wework', 'ThetaRay', 'CyberArk'
 ];
 
 const orderSponsors = (sponsors) => {
