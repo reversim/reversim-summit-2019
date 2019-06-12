@@ -49,7 +49,7 @@ const Hero = ({ eventConfig }) => (
           </div>
 
           {/*<div className={cn(left, 'text-white')}>*/}
-          <div className={cn(subtitle, "p-2 d-flex mt-4 mb-8")}>
+          <div className={cn(subtitle, "p-2 d-flex mt-4 justify-content-around")}>
             <div>
               <FontAwesomeIcon className="mr-2" icon="calendar-alt" />
               16-17.6.2019
@@ -59,6 +59,7 @@ const Hero = ({ eventConfig }) => (
               TLV Convention center
             </div>
           </div>
+          <div className={cn(subtitle, "p-2 d-flex mt-1 mb-6")}>{"Registration is closed. See you at the conference"}</div>
           <div className="text-align-left">
             {eventConfig.voting && (
               <Link to="/proposals" className="unstyled-link">
@@ -68,12 +69,12 @@ const Hero = ({ eventConfig }) => (
               </Link>
             )}
           </div>
-          <div className="d-flex justify-content-between mobile-flex-column mx-2">
-            <a href="https://ti.to/reversim-summit/2019" className="unstyled-link mb-4">
-              <Button className="styled-button on-purple">
-                {"Get Tickets"}
-              </Button>
-            </a>
+          <div className="d-flex justify-content-center mobile-flex-column">
+          {/*  <a href="https://ti.to/reversim-summit/2019" className="unstyled-link mb-4">*/}
+          {/*    <Button className="styled-button on-purple">*/}
+          {/*      {"Get Tickets"}*/}
+          {/*    </Button>*/}
+          {/*  </a>*/}
             <Link to="/agenda" className="unstyled-link mb-4">
               <Button className="styled-button on-purple">
                 {"View Agenda"}

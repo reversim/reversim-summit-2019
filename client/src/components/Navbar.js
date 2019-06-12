@@ -140,7 +140,7 @@ class Navbar extends Component {
           <Nav
           navbar
           className={cn('ml-auto align-items-end p-3 p-lg-0', navbarOpen)}>
-            {!isSmallScreen && <li><GetTicketsCTA /></li>}
+            {/*{!isSmallScreen && <li><GetTicketsCTA /></li>}*/}
           {/*<a*/}
           {/*href="https://www.eventbrite.com/e/reversim-summit-2018-tickets-48220530906"*/}
           {/*target="_blank"*/}

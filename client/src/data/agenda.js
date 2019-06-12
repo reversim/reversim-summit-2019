@@ -52,6 +52,10 @@ export const agenda1 = [
     ],
   },
   {
+    time: '15:20-15:40',
+    text: 'Break :)'
+  },
+  {
     time: '15:40-16:10',
     sessions: ['5c771e7d9cec66001786e604','5c5fe555e6ceb50017772487', '5c66b0052be200001726d346', '5c5145067314030017e1c2b5'],
   },
@@ -122,6 +126,10 @@ export const agenda2 = [
       '5c767e73b347af001757ff22',
       '5c5eafa3ced7850017d57f41',
     ],
+  },
+  {
+    time: '15:20-15:40',
+    text: 'Break :)'
   },
   {
     time: '15:40-16:10',
