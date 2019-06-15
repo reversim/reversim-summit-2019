@@ -153,6 +153,7 @@ const Line = ({
   time,
   sessions,
   text,
+  isPlaceHolder,
   href,
   shortSessions,
   allSessions,
@@ -196,8 +197,12 @@ const Line = ({
         users={users}
       />
     );
-  } else {
+  } else if (isPlaceHolder && excludedHalls.includes(0)) {
     cols = <Session text={text} />;
+  } else if (!isPlaceHolder) {
+    cols = <Session text={text} />;
+  } else {
+    cols = null;
   }
 
   if (href && cols) {

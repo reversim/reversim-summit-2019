@@ -6,6 +6,11 @@ export const agenda1 = [
   },
   {time: '10:00-10:50', text: 'Welcome + Keynote', sessions: '5cae52ece7179a36ac342cf9'},
   {
+    isPlaceHolder: true,
+    time: '10:50-11:10',
+    text: 'Welcome + Keynote (Hall A10)'
+  },
+  {
     time: '10:50-11:10',
     text: 'Break :)'
   },
@@ -52,6 +57,11 @@ export const agenda1 = [
     ],
   },
   {
+    isPlaceHolder: true,
+    time: '14:40-15:20',
+    text: 'Ignites (Hall A10)'
+  },
+  {
     time: '15:20-15:40',
     text: 'Break :)'
   },
@@ -82,6 +92,11 @@ export const agenda2 = [
     sessions: [null, '5c778acb9cec66001786e608', '5c76650be037850017ca38f8', '5c73f0a0fb50dd0017b460cb'],
   },
   {time: '10:00-10:50', text: 'Welcome + Keynote', sessions: '5cb2106436df6a42230a9640'},
+  {
+    isPlaceHolder: true,
+    time: '10:50-11:10',
+    text: 'Welcome + Keynote (Hall A10)'
+  },
   {
     time: '10:50-11:10',
     text: 'Break :)'
@@ -126,6 +141,11 @@ export const agenda2 = [
       '5c767e73b347af001757ff22',
       '5c5eafa3ced7850017d57f41',
     ],
+  },
+  {
+    isPlaceHolder: true,
+    time: '14:40-15:20',
+    text: 'Ignites (Hall A10)'
   },
   {
     time: '15:20-15:40',
