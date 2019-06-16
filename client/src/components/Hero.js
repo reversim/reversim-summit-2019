@@ -54,7 +54,7 @@ const Hero = ({ eventConfig }) => (
               <FontAwesomeIcon className="mr-2" icon="calendar-alt" />
               16-17.6.2019
             </div>
-            <a href="https://goo.gl/maps/HMRwNsM7Jpcz4j3p9">
+            <a href="https://goo.gl/maps/HMRwNsM7Jpcz4j3p9" target="_blank">
               <div className="ml-4 text-white">
                 <FontAwesomeIcon className="mr-2" icon="map-marker-alt" />
                 TLV Convention center
