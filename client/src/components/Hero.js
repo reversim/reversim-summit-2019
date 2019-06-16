@@ -54,10 +54,12 @@ const Hero = ({ eventConfig }) => (
               <FontAwesomeIcon className="mr-2" icon="calendar-alt" />
               16-17.6.2019
             </div>
-            <div className="ml-4">
-              <FontAwesomeIcon className="mr-2" icon="map-marker-alt" />
-              TLV Convention center
-            </div>
+            <a href="https://goo.gl/maps/HMRwNsM7Jpcz4j3p9">
+              <div className="ml-4 text-white">
+                <FontAwesomeIcon className="mr-2" icon="map-marker-alt" />
+                TLV Convention center
+              </div>
+            </a>
           </div>
           <div className={cn(subtitle, "p-2 d-flex mt-1 mb-6")}>{"Registration is closed. See you at the conference"}</div>
           <div className="text-align-left">
