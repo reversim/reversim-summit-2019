@@ -43,7 +43,7 @@
     "pre-render": "^0.1.0-preview.2",
     "promise": "8.0.1",
     "react": "^16.4.1",
-    "react-dev-utils": "^4.2.2",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.4.2",
     "react-ga": "^2.5.3",
     "react-google-maps": "^9.4.5",
