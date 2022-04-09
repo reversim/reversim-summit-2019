@@ -21,7 +21,7 @@
     "helmet": "^3.13.0",
     "lodash": "^4.17.11",
     "method-override": "^2.3.9",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.21",
     "mongoose": "^4.13.14",
     "newrelic": "^4.5.1",
